@@ -1,3 +1,4 @@
+import 'package:voy/models/emmision_model.dart';
 import 'package:voy/models/user_model.dart';
 
 final List<UserModel> mockUsers = [
@@ -105,3 +106,30 @@ final List<UserModel> mockUsers = [
   ),
 ];
 
+final List<EmissionModel> mockEmission = [
+  EmissionModel(
+    success: true,
+    numberOfRides: 3,
+    totalCarbonSavedKg: 15.4,
+  ),
+  EmissionModel(
+    success: true,
+    numberOfRides: 5,
+    totalCarbonSavedKg: 25.8,
+  ),
+  EmissionModel(
+    success: true,
+    numberOfRides: 2,
+    totalCarbonSavedKg: 9.7,
+  ),
+  EmissionModel(
+    success: true,
+    numberOfRides: 8,
+    totalCarbonSavedKg: 41.2,
+  ),
+  EmissionModel(
+    success: true,
+    numberOfRides: 4,
+    totalCarbonSavedKg: 18.3,
+  ),
+];

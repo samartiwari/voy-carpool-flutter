@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:permission_handler/permission_handler.dart';
-import 'package:voy/pages/home_page.dart';
-import 'package:voy/pages/register_page.dart';
+import 'package:voy/features/profile/ui/profile_page.dart';
 import 'package:voy/widgets/my_button.dart';
 
 class MainScreen extends StatefulWidget {
@@ -15,7 +14,7 @@ class _MainScreenState extends State<MainScreen> {
 
   void buttonPressed(){
     Navigator.push(
-        context, MaterialPageRoute(builder: (context)=>HomePage()));
+        context, MaterialPageRoute(builder: (context)=>ProfilePage()));
   }
 
   //requesting permission for location

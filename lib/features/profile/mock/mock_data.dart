@@ -66,7 +66,7 @@ List<Map<String, dynamic>> mockJsonData = [
       "email_verified": true,
       "phone_verified": true,
       "created_at": "2025-03-20T19:05:28.472874Z",
-      "drivers_license_image": null,
+      "drivers_license_image": "lulululu",
       "is_driver_verified": true,
       "rating_as_driver": 4.9,
       "rating_as_passenger": 4.7,

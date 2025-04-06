@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:voy/features/profile/bloc/profile_bloc.dart';
 import 'package:voy/features/profile/ui/profile_top_details.dart';
+import 'package:voy/features/profile_tiles/ui/profile_verification/verification_page.dart';
 
 class ProfilePage extends StatefulWidget {
   const ProfilePage({super.key});
@@ -73,7 +74,17 @@ class _ProfilePageState extends State<ProfilePage> {
                       Icons.newspaper,
                       color: Colors.white,
                     ),
-                    onTap: (){},
+                    onTap: (){
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) =>
+                                VerificationPage(
+                                  profileModel: successState.profile,
+                                )
+                        ),
+                      );
+                    },
                   ),
 
                   //my contribution

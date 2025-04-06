@@ -8,6 +8,6 @@ class ProfileApiService {
 
     // Pick a random JSON object from mockJsonData
     //final random = Random();
-    return mockJsonData[2];
+    return mockJsonData[1];
   }
 }

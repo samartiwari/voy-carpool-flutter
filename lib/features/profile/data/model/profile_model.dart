@@ -30,7 +30,7 @@ class ProfileModel {
     this.vehicleModel,
     required this.totalSeats,
     required this.completedRidesAsPassenger,
-    required this.completedRidesAsDriver
+    required this.completedRidesAsDriver,
   });
 
   factory ProfileModel.fromJson(Map<String, dynamic> json) {

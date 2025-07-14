@@ -21,37 +21,27 @@ class _LoginPageState extends State<LoginPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Color(0XFF191919),
+      appBar: AppBar(
+        backgroundColor: Color(0XFF191919),
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back_ios),
+          color: Colors.white,
+          onPressed: (){
+            Navigator.pop(context);
+          },
+        ),
+        title: Text(
+          "Log in",
+          style: TextStyle(
+              fontSize: 30,
+              color: Colors.white
+          ),
+        )
+      ),
       body: Column(
         children: [
-
-          //top space
-          SizedBox(height: 45,),
-
-          //back button and title of page
-          Padding(
-            padding: EdgeInsets.all(40),
-            child: Row(
-              children: [
-                Icon(
-                  Icons.arrow_back_ios,
-                  color: Colors.white,
-                  size: 28
-                ),
-                //space between back button and login text
-                const SizedBox(width: 15,),
-                Text(
-                  "Log in",
-                  style: TextStyle(
-                    fontSize: 30,
-                    color: Colors.white
-                  ),
-                )
-              ],
-            ),
-          ),
-
           SizedBox(
-            height: 120,
+            height: 180,
           ),
 
           //light colored expanded box which contain every text fields

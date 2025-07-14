@@ -4,6 +4,8 @@ import 'package:permission_handler/permission_handler.dart';
 import 'package:voy/features/profile/ui/profile_page.dart';
 import 'package:voy/widgets/my_button.dart';
 
+import 'login_page.dart';
+
 class MainScreen extends StatefulWidget {
   const MainScreen({super.key});
   @override
@@ -14,7 +16,7 @@ class _MainScreenState extends State<MainScreen> {
 
   void buttonPressed(){
     Navigator.push(
-        context, MaterialPageRoute(builder: (context)=>ProfilePage()));
+        context, MaterialPageRoute(builder: (context)=>LoginPage()));
   }
 
   //requesting permission for location

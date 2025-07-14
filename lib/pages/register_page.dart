@@ -41,37 +41,27 @@ class _RegisterPageState extends State<RegisterPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Color(0XFF191919),
+      appBar: AppBar(
+          backgroundColor: Color(0XFF191919),
+          leading: IconButton(
+            icon: Icon(Icons.arrow_back_ios),
+            color: Colors.white,
+            onPressed: (){
+              Navigator.pop(context);
+            },
+          ),
+          title: Text(
+            "Sign up",
+            style: TextStyle(
+                fontSize: 30,
+                color: Colors.white
+            ),
+          )
+      ),
       body: Column(
         children: [
-
-          //top space
-          SizedBox(height: 45,),
-
-          //back button and title of page
-          Padding(
-            padding: EdgeInsets.all(40),
-            child: Row(
-              children: [
-                Icon(
-                    Icons.arrow_back_ios,
-                    color: Colors.white,
-                    size: 28
-                ),
-                //space between back button and login text
-                const SizedBox(width: 15,),
-                Text(
-                  "Sign up",
-                  style: TextStyle(
-                      fontSize: 30,
-                      color: Colors.white
-                  ),
-                )
-              ],
-            ),
-          ),
-
           SizedBox(
-            height: 10,
+            height: 55,
           ),
 
           //light colored expanded box which contain every text fields
@@ -87,6 +77,8 @@ class _RegisterPageState extends State<RegisterPage> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
+                  //starting space
+                  const SizedBox(height: 30,),
 
                   //contain phone number text
                   MyTextfieldTitle(text: "Phone Number"),
